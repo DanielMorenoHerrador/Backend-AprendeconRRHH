@@ -3,7 +3,7 @@
     "username": "b0a776dd0257d2",
     "password": "f72a5fad",
     "database": "heroku_39e7ffed998f2e7",
-    "host": "eu-cdbr-west-02.cleardb.com",
+    "host": "eu-cdbr-west-02.cleardb.net",
     "port": "3306",
     "dialect": "mysql"
   },
@@ -11,14 +11,14 @@
     "username": "b0a776dd0257d2",
     "password": "f72a5fad",
     "database": "heroku_39e7ffed998f2e7",
-    "host": "eu-cdbr-west-02.cleardb.com",
+    "host": "eu-cdbr-west-02.cleardb.net",
     "dialect": "mysql"
   },
   "production": {
     "username": "b0a776dd0257d2",
     "password": "f72a5fad",
     "database": "heroku_39e7ffed998f2e7",
-    "host": "eu-cdbr-west-02.cleardb.com",
+    "host": "eu-cdbr-west-02.cleardb.net",
     "port": "3306",
     "dialect": "mysql"
   }
