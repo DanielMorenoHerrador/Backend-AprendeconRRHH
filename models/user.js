@@ -5,12 +5,12 @@ const {Model} = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class user extends Model {
     
-    // static associate(models) {
-    //   this.hasMany(models.pedido, {
-    //     foreignKey: 'userId'
-    //   })
+    static associate(models) {
+      this.hasMany(models.order, {
+        foreignKey: 'userId'
+      })
       
-    // }
+    }
   };
   user.init({
     name: {

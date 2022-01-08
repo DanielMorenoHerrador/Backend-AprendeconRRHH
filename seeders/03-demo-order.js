@@ -3,44 +3,44 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
   
-      await queryInterface.bulkInsert('orders', [{
+      await queryInterface.bulkInsert('services', [{
       userId: 1,
-      peliculaId: 1,
+      serviceId: 1,
       rentDate: new Date(),
       returnDate: new Date(),
     }, {
-      userId: 2,
-      peliculaId: 2,
+      userId: 11,
+      serviceId: 11,
       rentDate: new Date(),
       returnDate: new Date(),
     }, {
-      userId: 2,
-      peliculaId: 3,
-      rentDate: new Date(),
-      returnDate: new Date(),
-    }, {
-      userId: 1,
-      peliculaId: 4,
+      userId: 11,
+      serviceId: 21,
       rentDate: new Date(),
       returnDate: new Date(),
     }, {
       userId: 1,
-      peliculaId: 5,
+      serviceId: 31,
       rentDate: new Date(),
       returnDate: new Date(),
     }, {
       userId: 1,
-      peliculaId: 3,
+      serviceId: 41,
       rentDate: new Date(),
       returnDate: new Date(),
     }, {
-      userId: 2,
-      peliculaId: 1,
+      userId: 1,
+      serviceId: 21,
       rentDate: new Date(),
       returnDate: new Date(),
     }, {
-      userId: 2,
-      peliculaId: 4,
+      userId: 11,
+      serviceId: 1,
+      rentDate: new Date(),
+      returnDate: new Date(),
+    }, {
+      userId: 11,
+      serviceId: 31,
       rentDate: new Date(),
       returnDate: new Date(),
     }
@@ -49,7 +49,7 @@ module.exports = {
 
   down: async (queryInterface, Sequelize) => {
     
-      await queryInterface.bulkDelete('orders', null, {});
+      await queryInterface.bulkDelete('services', null, {});
     
   }
 };

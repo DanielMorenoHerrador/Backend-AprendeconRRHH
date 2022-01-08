@@ -6,12 +6,11 @@ module.exports = (sequelize, DataTypes) => {
   class order extends Model {
     
     static associate(models) {
-      
-      this.belongsTo(models.service, {
-        foreignKey: 'serviceId'
-      });
       this.belongsTo(models.user, {
         foreignKey: 'userId'
+      });
+      this.belongsTo(models.service, {
+        foreignKey: 'serviceId'
       });
     }
   };

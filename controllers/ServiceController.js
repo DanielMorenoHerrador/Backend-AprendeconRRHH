@@ -65,7 +65,7 @@ ServiceController.create = (req, res) => {
     // Crear la Service
     const newService = {
       name: req.body.name,
-      categoryId: req.body.categoryId
+      price: req.body.price,
     };
   
     // Guardar Service en database
