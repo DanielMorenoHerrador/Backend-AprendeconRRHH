@@ -4,13 +4,13 @@ const router = require('express').Router();
 const auth = require('./middlewares/auth');
 
 //Importamos endpoints definidas en views
-// const PeliculasRouter = require('./views/PeliculaRouter');
-// const PedidosRouter = require('./views/PedidoRouter');
+const ServicesRouter = require('./views/ServiceRouter');
+const OrdersRouter = require('./views/OrderRouter');
 const UserRouter = require('./views/UserRouter');
 
 //Rutas
 router.use('/users', UserRouter); //Login and register routes
-// router.use('/peliculas', PeliculasRouter); //add auth
-// router.use('/pedidos', PedidosRouter);
+router.use('/services', ServicesRouter); //add auth
+router.use('/orders', OrdersRouter);
 
 module.exports = router;

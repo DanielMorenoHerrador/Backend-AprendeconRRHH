@@ -1,0 +1,2 @@
+{"level":"info","message":"::1 - - [08/Jan/2022:12:54:46 +0000] \"GET / HTTP/1.1\" 400 1382 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-08T12:54:46.598Z"}
+{"level":"info","message":"::1 - - [08/Jan/2022:12:55:43 +0000] \"GET /api HTTP/1.1\" 400 1382 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-08T12:55:43.824Z"}
