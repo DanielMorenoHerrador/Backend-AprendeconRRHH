@@ -11,6 +11,6 @@ const UserRouter = require('./views/UserRouter');
 //Rutas
 router.use('/users', UserRouter); //Login and register routes
 router.use('/services', ServicesRouter); //add auth
-router.use('/orders',auth, OrdersRouter);
+router.use('/orders', OrdersRouter);
 
 module.exports = router;
