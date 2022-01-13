@@ -62,8 +62,8 @@ OrderController.create = (req, res) => {
   
     
     const neworder = {
-      userid: req.body.userId,
-      serviceid: req.body.serviceId,
+      userId: req.body.userId,
+      serviceId: req.body.serviceId,
       rentDate: new Date(),
       returnDate: new Date(),
     };
