@@ -140,3 +140,6 @@
 {"level":"info","message":"::1 - - [14/Jan/2022:23:15:08 +0000] \"GET /orders/getByUserId HTTP/1.1\" 500 58 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T23:15:08.777Z"}
 {"level":"info","message":"::1 - - [14/Jan/2022:23:15:54 +0000] \"GET /orders/getByUserId HTTP/1.1\" 500 72 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T23:15:54.289Z"}
 {"level":"info","message":"::1 - - [14/Jan/2022:23:17:20 +0000] \"GET /orders/getByUserId HTTP/1.1\" 200 2529 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T23:17:20.568Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:23:28:26 +0000] \"GET /orders/getByUserId HTTP/1.1\" 200 2529 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T23:28:26.521Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:23:29:34 +0000] \"GET /orders/getByUserId HTTP/1.1\" 200 2529 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T23:29:34.515Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:23:39:27 +0000] \"POST /orders/getByUserId HTTP/1.1\" 200 2529 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T23:39:27.142Z"}
