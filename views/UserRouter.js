@@ -5,7 +5,7 @@ const router = express.Router();
 const AuthController = require('../controllers/AuthController');
 
 
-// Dos rutas: login y registro
+// Tres rutas: login , registro y update
 router.get('/', AuthController.getAll);
 router.post('/signin', AuthController.signIn);
 router.post('/signup', AuthController.signUp);

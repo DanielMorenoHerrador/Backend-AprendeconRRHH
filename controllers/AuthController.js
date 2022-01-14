@@ -155,39 +155,30 @@ AuthController.signUp = (req, res)=> {
 
     //UPDATE an User from database
 AuthController.update = (req, res) => {
-    const id = req.body.id;
-    if (req.user.admin || req.user.user.id == id) {
-    if (req.body.password) {
-        req.body.password = bcrypt.hashSync(
-        req.body.password,
-        Number.parseInt(authConfig.rounds)
-        );
-    }
-    users.update(req.body, {
-        where: { id: id },
+
+        const id = req.params.id;
+
+        usuario.update(req.body, {
+            where: { id: id }
         })
-        .then((num) => {
+        .then(num => {
         if (num == 1) {
-            res.send({
-            message: "User was updated successfully.",
-            });
+        res.send({
+            message: "El usuario ha sido actualizado correctamente."
+        });
         } else {
-            res.send({
-            message: `Cannot update User with id=${id}. Maybe User was not found or req.body is empty!`,
-            });
+        res.send({
+            message: `No se ha podido actualizar el usuario con el id ${id}`
+        });
         }
         })
-        .catch((err) => {
+        .catch(err => {
         res.status(500).send({
-            message: err.message || "Error updating User with id=" + id,
+            message: "Ha surgido algún error al intentar actualizar el usuario con el id " + id + "."
         });
         });
-    } else {
-    res.send({
-        message: "Authorization required to update user.",
-    });
-    }
-};
+
+    };
 
 module.exports = AuthController;
 
