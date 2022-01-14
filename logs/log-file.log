@@ -101,3 +101,17 @@
 {"level":"info","message":"::ffff:127.0.0.1 - - [14/Jan/2022:18:03:47 +0000] \"PUT /users/update HTTP/1.1\" 500 2167 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:03:47.612Z"}
 {"level":"info","message":"::1 - - [14/Jan/2022:18:04:32 +0000] \"PUT /users/update HTTP/1.1\" 200 44 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:04:32.801Z"}
 {"level":"info","message":"::1 - - [14/Jan/2022:18:04:55 +0000] \"GET /users/ HTTP/1.1\" 200 1149 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:04:55.855Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:18:05:35 +0000] \"PUT /users/ HTTP/1.1\" 404 145 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:05:35.769Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:18:05:47 +0000] \"PUT /users/ HTTP/1.1\" 404 145 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:05:47.579Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:18:05:53 +0000] \"PUT /users/ HTTP/1.1\" 404 145 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:05:53.402Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:18:05:59 +0000] \"PUT /users/ HTTP/1.1\" 404 145 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:05:59.019Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:18:06:00 +0000] \"PUT /users/ HTTP/1.1\" 404 145 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:06:00.411Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:18:06:01 +0000] \"PUT /users/ HTTP/1.1\" 404 145 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:06:01.512Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:18:06:14 +0000] \"PUT /users/ HTTP/1.1\" 404 145 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:06:14.125Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:18:06:35 +0000] \"PUT /users/update HTTP/1.1\" 200 44 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:06:35.404Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:18:06:42 +0000] \"PUT /users/update HTTP/1.1\" 200 44 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:06:42.067Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:18:06:49 +0000] \"PUT /users/update HTTP/1.1\" 500 68 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:06:49.829Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:18:07:09 +0000] \"PUT /users/update HTTP/1.1\" 200 44 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:07:09.717Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:18:07:22 +0000] \"PUT /users/update HTTP/1.1\" 200 44 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:07:22.076Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:18:17:14 +0000] \"PUT /users/update HTTP/1.1\" 200 44 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:17:14.566Z"}
+{"level":"info","message":"::1 - - [14/Jan/2022:18:17:21 +0000] \"PUT /users/update HTTP/1.1\" 200 44 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T18:17:21.239Z"}

@@ -175,11 +175,11 @@ AuthController.signUp = (req, res) => {
 
 //UPDATE an User from database
 AuthController.update = (req, res) => {
-    const id = req.body.id;
+    const name = req.body.name;
     
         user.update(req.body, {
                 where: {
-                    id: id
+                    name: name
                 },
             })
             .then((num) => {
@@ -189,13 +189,13 @@ AuthController.update = (req, res) => {
                     });
                 } else {
                     res.send({
-                        message: `Cannot update User with id=${id}. Maybe User was not found or req.body is empty!`,
+                        message: `Cannot update User with name=${name}. Maybe User was not found or req.body is empty!`,
                     });
                 }
             })
             .catch((err) => {
                 res.status(500).send({
-                    message: err.message || "Error updating User with id=" + id,
+                    message: err.message || "Error updating User with name=" + name,
                 });
             });
     
