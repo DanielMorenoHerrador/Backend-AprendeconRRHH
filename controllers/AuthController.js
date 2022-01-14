@@ -154,7 +154,7 @@ AuthController.signUp = (req, res)=> {
     };
 
     //UPDATE an User from database
-UserController.update = (req, res) => {
+AuthController.update = (req, res) => {
     const id = req.body.id;
     if (req.user.admin || req.user.user.id == id) {
     if (req.body.password) {
@@ -163,8 +163,7 @@ UserController.update = (req, res) => {
         Number.parseInt(authConfig.rounds)
         );
     }
-    users
-        .update(req.body, {
+    users.update(req.body, {
         where: { id: id },
         })
         .then((num) => {
