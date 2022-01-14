@@ -176,29 +176,54 @@ AuthController.signUp = (req, res) => {
 //UPDATE an User from database
 AuthController.update = (req, res) => {
     const name = req.body.name;
+
+    user.update(req.body, {
+            where: {
+                name: name
+            },
+        })
+        .then((num) => {
+            if (num == 1) {
+                res.send({
+                    message: "User was updated successfully.",
+                });
+            } else {
+                res.send({
+                    message: `Cannot update User with name=${name}. Maybe User was not found or req.body is empty!`,
+                });
+            }
+        })
+        .catch((err) => {
+            res.status(500).send({
+                message: err.message || "Error updating User with name=" + name,
+            });
+        });
+
+};
+
+//GET user by Id from database
+AuthController.getById = (req, res) => {
+    const id = req.body.id;
     
-        user.update(req.body, {
-                where: {
-                    name: name
-                },
+        user.findByPk(id, {
+                include: {
+                    all: true
+                }
             })
-            .then((num) => {
-                if (num == 1) {
-                    res.send({
-                        message: "User was updated successfully.",
-                    });
+            .then((data) => {
+                if (data) {
+                    res.send(data);
                 } else {
-                    res.send({
-                        message: `Cannot update User with name=${name}. Maybe User was not found or req.body is empty!`,
+                    res.status(404).send({
+                        message: `Cannot find user with id=${id}.`,
                     });
                 }
             })
             .catch((err) => {
                 res.status(500).send({
-                    message: err.message || "Error updating User with name=" + name,
+                    message: err.message || "Error retrieving user with id=" + id,
                 });
             });
-    
 };
 
 module.exports = AuthController;

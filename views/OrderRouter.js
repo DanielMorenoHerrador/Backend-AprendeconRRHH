@@ -6,7 +6,8 @@ const OrderController = require('../controllers/OrderController');
 
 // Endpoints CRUD Orders
 router.get('/', OrderController.getAll);
-router.get('/:id', OrderController.getById);
+// router.get('/:id', OrderController.getById);
+router.get("/getByUserId", OrderController.getByUserId);
 router.get('/title/:title', OrderController.getByType);
 router.post('/', OrderController.create);
 router.put('/:id', OrderController.update);

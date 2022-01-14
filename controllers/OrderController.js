@@ -1,6 +1,7 @@
 //Importo modelo de datos
 const db = require("../models");
 const order = db.order;
+const user = db.user;
 const Op = db.Sequelize.Op; 
 
 const OrderController = {};
@@ -28,25 +29,25 @@ OrderController.getAll = (req, res) => {
 
 //-------------------------------------------------------------------------------------
 //GET pedidos por ID en database
-OrderController.getById = (req, res) => {
-    const id = req.params.id;
+// OrderController.getById = (req, res) => {
+//     const id = req.params.id;
   
-    order.findByPk(id)
-      .then(data => {
-        if (data) {
-          res.send(data);
-        } else {
-          res.status(404).send({
-            message: `Cannot find pedido with id=${id}.`
-          });
-        }
-      })
-      .catch(err => {
-        res.status(500).send({
-          message: "Error retrieving categories with id=" + id
-        });
-      });
-  };
+//     order.findByPk(id)
+//       .then(data => {
+//         if (data) {
+//           res.send(data);
+//         } else {
+//           res.status(404).send({
+//             message: `Cannot find pedido with id=${id}.`
+//           });
+//         }
+//       })
+//       .catch(err => {
+//         res.status(500).send({
+//           message: "Error retrieving categories with id=" + id
+//         });
+//       });
+//   };
 
 
 //-------------------------------------------------------------------------------------
@@ -168,6 +169,26 @@ OrderController.deleteAll = (req, res) => {
             err.message || "Some error occurred while removing all categories."
         });
       });
+  };
+
+  OrderController.getByUserId = (req, res) => {
+    const id = req.body.userId;
+      order.findAll({
+          where: { userId: id },
+          order: [["id", "desc"]],
+          include: [
+            { model: user },
+          ],
+        })
+        .then((data) => {
+          res.send(data);
+        })
+        .catch((err) => {
+          res.status(500).send({
+            message:
+              err.message || "Some error occurred while retrieving orders.",
+          });
+        });
   };
 
 module.exports = OrderController;
