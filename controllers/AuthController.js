@@ -158,7 +158,7 @@ AuthController.update = (req, res) => {
 
         const id = req.params.id;
 
-        usuario.update(req.body, {
+        user.update(req.body, {
             where: { id: id }
         })
         .then(num => {
