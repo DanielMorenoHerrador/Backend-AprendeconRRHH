@@ -143,3 +143,5 @@
 {"level":"info","message":"::1 - - [14/Jan/2022:23:28:26 +0000] \"GET /orders/getByUserId HTTP/1.1\" 200 2529 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T23:28:26.521Z"}
 {"level":"info","message":"::1 - - [14/Jan/2022:23:29:34 +0000] \"GET /orders/getByUserId HTTP/1.1\" 200 2529 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T23:29:34.515Z"}
 {"level":"info","message":"::1 - - [14/Jan/2022:23:39:27 +0000] \"POST /orders/getByUserId HTTP/1.1\" 200 2529 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-14T23:39:27.142Z"}
+{"level":"info","message":"::1 - - [15/Jan/2022:00:12:46 +0000] \"GET /services HTTP/1.1\" 200 4325 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-15T00:12:46.900Z"}
+{"level":"info","message":"::1 - - [15/Jan/2022:00:14:42 +0000] \"GET /services HTTP/1.1\" 401 30 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2022-01-15T00:14:42.552Z"}
