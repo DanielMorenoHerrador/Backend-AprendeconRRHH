@@ -7,7 +7,7 @@ const AuthController = require('../controllers/AuthController');
 
 // Tres rutas: login , registro y update
 router.post('/', AuthController.getAll);
-router.get("/getById", AuthController.getById);
+// router.get("/getById", AuthController.getById);
 router.post('/signin', AuthController.signIn);
 router.post('/signup', AuthController.signUp);
 router.put('/update', AuthController.update);
